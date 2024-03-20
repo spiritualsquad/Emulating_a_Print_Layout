@@ -1,60 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Ojuju:wght@200..800&display=swap');
 * {
-    font-family: 'Encode Sans', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
 }
+
 h1 {
-    border-left: 2px solid black; /* Border on the left side */
-    border-right: 2px solid black; /* Border on the right side */
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-    display: inline-block; /* or display: inline; */
-    text-transform: uppercase;
-    color: rgb(181, 119, 4);
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(181, 119, 4);
 }
+
 main {
-    display: flex;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.article-wrapper {
+  width: 100%;
 }
 
 article {
-    width: 60%; /* Adjust width as needed */
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.first{
+  width: 5cm;
 }
 
-article img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
+.second{
+  width:5cm
 }
-
-article h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.image{
+  height: 5cm;
+  width: 5cm;
 }
-
-article p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-article p:last-child {
-    margin-bottom: 0;
-}
-
-/* Style first h2 and p as a heading */
-article > h2:first-of-type,
-article > p:first-of-type {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-
-
