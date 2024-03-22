@@ -1,16 +1,26 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Ojuju:wght@200..800&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(4, 4, 96);
+  
 }
+
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
   background-color: rgb(147, 80, 80);
 }
-
+h1 {
+  border-left: 2px solid black; /* Border on the left side */
+  border-right: 2px solid black; /* Border on the right side */
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  display: inline-block; /* or display: inline; */
+  text-transform: uppercase;
+  color: rgb(181, 119, 4);
+}
 #container {
   max-width: 1200px;
   margin: 0 auto;
