@@ -1,24 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Scribble&display=swap');
+
+/* Resetting styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styles */
 body {
   font-family: "Bitter", serif;
   background-color: white;
 }
 
+/* Container styles */
 #container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   height: 8cm;
-  margin-left: 5.4cm;
+  margin-left: 5.4cm; /* Adjusted margin for centering */
 }
 
+/* Header styles */
 header h1 {
   border-left: 2px solid black; /* Border on the left side */
   border-right: 2px solid black; /* Border on the right side */
@@ -27,15 +31,17 @@ header h1 {
   margin-left: 10px;
   display: inline-block; /* or display: inline; */
   text-transform: uppercase;
-  color: rgb(181, 119, 4);
+  color: rgb(181, 119, 4); /* Adjusted text color */
 }
 
+/* Main styles */
 .main {
   display: flex;
   flex-wrap: wrap;
   gap: 0px;
 }
 
+/* Grid item styles */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -83,11 +89,13 @@ header h1 {
   margin-top: 10px;
 }
 
+/* Small text styles */
 small {
   margin-top: 50px;
   color: red;
 }
 
+/* Title styles */
 .title1, .title2, .title3, .title4, .title5, .title6, .title7, .title8 {
   padding-top: 50px;
   padding-left: 20px;
@@ -96,6 +104,7 @@ small {
   
 }
 
+/* Adjusted grid item styles */
 .grid-item8 {
   background-color: #ffffff;
   width: 92.5%;
@@ -111,17 +120,17 @@ small {
 
 }
 
+/* Title1 styles */
 .title1 {
   background-color: aliceblue;
   padding-bottom: 0.8cm;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  
-  
 }
 
+/* H2 styles */
 h2 {
-  color: red;
+  color: red; /* Adjusted heading color */
   font-family: 'Times New Roman', Times, serif;
   font-weight: bolder;
   cursor: pointer;
@@ -132,19 +141,26 @@ h2 {
   border-width: 2px;
   border-color: black;
 }
+
+/* Title1 h2 styles */
 .title1 h2{
   font-family: "Bebas Neue", sans-serif;
   color: black;
-  font-size: 45px;
+  font-size: 45px; /* Adjusted font size */
 }
+
+/* Strong styles */
 .title1 strong{
-  color: rgb(181, 119, 4);
+  color: rgb(181, 119, 4); /* Adjusted text color */
 }
+
+/* Last paragraph styles */
 .last{
   text-align: right;
   margin-right: 80px;
 }
 
+/* Media query for smaller screens */
 @media only screen and (max-width: 1161px) {
   #container {
     margin-left: 0; 
@@ -162,6 +178,6 @@ h2 {
   }
 
   header h1{
-    margin-left: 2.3cm;
+    margin-left: 2.3cm; /* Adjusted margin for smaller screens */
   }
 }
